@@ -1,0 +1,18 @@
+info:
+  name: Document
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: localhost:8080/api/document
+  headers:
+    - name: Content-Type
+      value: text/plain
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

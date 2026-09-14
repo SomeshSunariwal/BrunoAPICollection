@@ -1,0 +1,31 @@
+info:
+  name: File
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: localhost:8080/api/file
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "message": [
+          "Message 1",
+          "Message 2",
+          "Message 3",
+          "Message 4",
+          "Message 5",
+          "Message 6"
+        ]
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,28 @@
+info:
+  name: Add User
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: localhost:8080/api/users/register
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "username": "somesh1",
+        "firstName": "some",
+        "lastName": "suna",
+        "email": "some1@11.com",
+        "password": "1231"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

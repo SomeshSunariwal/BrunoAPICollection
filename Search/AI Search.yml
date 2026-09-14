@@ -1,0 +1,24 @@
+info:
+  name: AI Search
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: localhost:8080/api/users/generate
+  body:
+    type: json
+    data: |-
+      {
+        "searchTerm": "What is an AI Power ?"
+      }
+  auth:
+    type: bearer
+    token: "{{Token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

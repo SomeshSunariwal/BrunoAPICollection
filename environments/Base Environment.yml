@@ -1,0 +1,5 @@
+name: Base Environment
+variables:
+  - name: Token
+    value: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb21lMUAxMS5jb20iLCJpc3MiOiJEb2N1bWVudEludGVsbGlnZW5jZS5Db20iLCJpYXQiOjE3ODkzOTU4OTUsImV4cCI6MTc4OTM5Njc5NX0.YkIXA-PTW68M7xY_MZdXq0pXlC7CVoBTBh20I-lBCx8
+    description: ""

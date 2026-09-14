@@ -1,0 +1,24 @@
+info:
+  name: Question
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: localhost:8080/api/question
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "question": "Who are you?"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

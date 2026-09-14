@@ -1,0 +1,29 @@
+info:
+  name: Upload Document
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: localhost:8080/api/users/documents
+  headers:
+    - name: Content-Type
+      value: multipart/form-data
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - C:\Users\Somes.Somesh\Desktop\Tester\Requirement.txt
+        contentType: text/plain; charset=utf-8
+  auth:
+    type: bearer
+    token: "{{Token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
