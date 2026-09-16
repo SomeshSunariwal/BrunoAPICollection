@@ -1,17 +1,18 @@
 info:
-  name: Normal Search
+  name: Chat Streaming
   type: http
   seq: 1
 
 http:
-  method: POST
-  url: localhost:8080/api/users/search
+  method: GET
+  url: localhost:8080/api/chat?question=what is java?
+  params:
+    - name: question
+      value: what is java?
+      type: query
   body:
     type: json
-    data: |-
-      {
-        "searchTerm": "User"
-      }
+    data: ""
   auth:
     type: bearer
     token: "{{Token}}"

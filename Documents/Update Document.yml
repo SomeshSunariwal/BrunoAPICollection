@@ -5,7 +5,7 @@ info:
 
 http:
   method: PUT
-  url: localhost:8080/api/users/documents/45cfcee2-b712-446c-a83c-9627ebb7100d
+  url: localhost:8080/api/users/documents/3ab51c2a-363b-4a6d-9570-e1f1626a71ea
   headers:
     - name: Content-Type
       value: multipart/form-data

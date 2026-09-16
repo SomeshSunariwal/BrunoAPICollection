@@ -1,27 +1,22 @@
 info:
-  name: Upload Document
+  name: getDocument
   type: http
-  seq: 1
+  seq: 5
 
 http:
-  method: POST
-  url: localhost:8080/api/users/documents
+  method: GET
+  url: localhost:8080/api/users/documents/325bdc09-92a6-4ebb-a1d3-888a2c3d3628
   headers:
     - name: Content-Type
       value: multipart/form-data
   body:
     type: multipart-form
     data:
-      - name: files
+      - name: file
         type: file
         value:
-          - C:\Users\Somes.Somesh\Desktop\Tester\DocIntel.pdf
+          - C:\Users\Somes.Somesh\Desktop\Tester\test.pdf
         contentType: application/pdf
-      - name: files
-        type: file
-        value:
-          - C:\Users\Somes.Somesh\Desktop\Tester\Requirement.txt
-        contentType: text/plain; charset=utf-8
   auth:
     type: bearer
     token: "{{Token}}"
