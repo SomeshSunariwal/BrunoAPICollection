@@ -4,14 +4,12 @@ info:
   seq: 2
 
 http:
-  method: POST
-  url: localhost:8080/api/users/generate
-  body:
-    type: json
-    data: |-
-      {
-        "searchTerm": "What is an AI Power ?"
-      }
+  method: GET
+  url: localhost:8080/api/users/chat?query=what is real number?
+  params:
+    - name: query
+      value: what is real number?
+      type: query
   auth:
     type: bearer
     token: "{{Token}}"

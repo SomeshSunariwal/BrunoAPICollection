@@ -1,7 +1,7 @@
 info:
   name: getDocument
   type: http
-  seq: 5
+  seq: 6
 
 http:
   method: GET
@@ -9,14 +9,6 @@ http:
   headers:
     - name: Content-Type
       value: multipart/form-data
-  body:
-    type: multipart-form
-    data:
-      - name: file
-        type: file
-        value:
-          - C:\Users\Somes.Somesh\Desktop\Tester\test.pdf
-        contentType: application/pdf
   auth:
     type: bearer
     token: "{{Token}}"

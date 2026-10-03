@@ -11,7 +11,7 @@ http:
     data: |-
       {
         "type": "LOCAL",
-        "modelName": "qwen2.5-coder-7b-instruct",
+        "modelName": "llama-3.2-3b-instruct",
         "baseURL": "http://127.0.0.1:1234/v1",
         "apiKey": ""
       }

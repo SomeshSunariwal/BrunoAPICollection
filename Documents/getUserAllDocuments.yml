@@ -1,14 +1,18 @@
 info:
   name: getUserAllDocuments
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: GET
-  url: localhost:8080/api/users/documents
+  url: localhost:8080/api/users/documents?page=1
   headers:
     - name: Content-Type
       value: application/json
+  params:
+    - name: page
+      value: "1"
+      type: query
   body:
     type: json
     data: ""

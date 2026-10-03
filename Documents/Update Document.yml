@@ -1,11 +1,11 @@
 info:
   name: Update Document
   type: http
-  seq: 2
+  seq: 3
 
 http:
   method: PUT
-  url: localhost:8080/api/users/documents/3ab51c2a-363b-4a6d-9570-e1f1626a71ea
+  url: localhost:8080/api/users/documents/e95de478-cb0d-4bc0-8dca-f073043b9619
   headers:
     - name: Content-Type
       value: multipart/form-data
@@ -15,7 +15,7 @@ http:
       - name: file
         type: file
         value:
-          - C:\Users\Somes.Somesh\Desktop\Tester\test.pdf
+          - C:\Users\Somes.Somesh\Desktop\Tester\pdf\ncert-books-class-10-maths-chapter-4.pdf
         contentType: application/pdf
   auth:
     type: bearer
