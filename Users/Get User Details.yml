@@ -1,21 +1,14 @@
 info:
-  name: getUserAllDocuments
+  name: Get User Details
   type: http
   seq: 5
 
 http:
   method: GET
-  url: localhost:8080/api/users/documents?page=0
+  url: localhost:8080/api/users
   headers:
     - name: Content-Type
       value: application/json
-  params:
-    - name: page
-      value: "0"
-      type: query
-  body:
-    type: json
-    data: ""
   auth:
     type: bearer
     token: "{{Token}}"
